@@ -1,0 +1,8 @@
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+
+#banner {
+    background-image: url("banner.PNG");
+    /* float: right; */
+}
