@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--bootstrap link-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<title>Travel Me</title>
+     <!--fontAwesomeIcons Link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <!--google font link-->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+  <!--CSS link-->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+
+  <title>Travel Me</title>
 </head>
+
 <body>
-    
+  <div class="container">
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 id="banner" class="display-4 mr-3 ml-3">Travel<i class="fas fa-globe-americas"></i>ME</h1>
+          <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  <!-- Jquery Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!--Javascript link-->
+  <script type="text/javascript" src="assets/js/app.js"></script>
+
+
+  <!--CLIMATE Buttons!-->
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="climate" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Climate
+          </button>
+          <!--DROP DOWN WITH INFO-->
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="nightLife" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Nightlife
+          </button>
+        </div>
+        <!--DROP DOWN WITH INFO-->
+      </div>
+      <!-- <div class="col-sm-3">
+          <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Polar
+              </button>
+          </div> 
+          </div>
+        </div>-->
+        <!--DROP DOWN WITH INFO-->
+      
+      <div class="col-sm-4">
+        <button type="button" class="btn btn-primary" id="nearMe">Near Me</button>
+        <!--DROP DOWN WITH INFO-->
+      </div>
+    </div>
+  </div>
+
+  <!--Info of city chosen 'fixed' on bottom left
+  'Top 5 things about this city!'-->
+
+
+
+
 </body>
+
 </html>
