@@ -1,8 +1,25 @@
 h1 {
     font-family: 'Playfair Display', serif;
+    text-align: center;
 }
-
+/* .jumbotron{
+    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjqkbfDtcnlAhVPJKwKHfsfDcYQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_43850571_earthy-background-image-and-design-element.html&psig=AOvVaw3NqrPf4TnWO2qUTzzn6BGh&ust=1572711454222446");
+    background-color: #b58c5b;
+} */
+/* 
 #banner {
-    background-image: url("banner.PNG");
-    /* float: right; */
+    
+    background-color: #DAD7CD;
+    float: right;
+} */
+
+/* body{
+    background-image: url(
+} */
+
+.jumbotron{
+    background-image: url(../images/banner2.PNG);
+    background-repeat: no-repeat;
+    
+
 }
