@@ -18,8 +18,31 @@ $.ajax({
       "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
   }
 }).then(function(response) {
-  for (let i = 0; i < response.events.length; i++) {
-    console.log(response.events[i].location);
+  for (let j = 0; j < response.events.length; j++) {
+    console.log(response.events[j].name);
+    {
+    
+          // Creating and storing a div tag
+          var eventDiv = $("<div>");
+  
+          // Creating a paragraph tag
+              var par = $("<p>").text(response.events[j].name);
+  
+           // Creating and storing an image tag
+
+              var eventImage = $("<img>");
+           // Setting the src attribute of the image to a property pulled off the result item
+
+              eventImage.attr("src", response.events[j].image_url);
+  
+           // Appending the paragraph and image tag
+              eventDiv.append(par);
+              eventDiv.append(eventImage);
+  
+              // Prependng 
+          $("#events").prepend(eventDiv);
+  
+  }
   }
 });
 
@@ -66,14 +89,8 @@ jQuery(
         size: "600x300",
         location: apiCity,
         heading: "151.78",
-        pitch: "-0.76",
+        pitch: "-0.76",  
         key: "AIzaSyCsRUeYJwQ2sprNWL0rDSCk4o6o7c9eFi8"
       })).show();
   }
 );
-// $.ajax({
-//   url: googleQueryURL,
-//   method: "GET"
-// }).then(function(response) {
-//   console.log(response);
-// });
