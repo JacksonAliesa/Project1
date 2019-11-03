@@ -13,13 +13,88 @@ h1 {
     float: right;
 } */
 
-/* body{
-    background-image: url(
-} */
-
-.jumbotron{
-    background-image: url(../images/banner2.PNG);
-    background-repeat: no-repeat;
-    
-
+body{
+    background-image: url(../images/grey.png);
 }
+
+
+ .jumbotron{
+    background-image: url(../images/banner.PNG);
+    background-size: 51%;
+    background-repeat: no-repeat;
+    background-color: #e3c16f;
+    color: #546037;
+    
+}
+
+#climate, #nightLife, #nearMe{
+    background-color: #e3c16f;
+    color: #546037;
+    border: 2px solid #546037;
+}
+#quote{
+    background-color: #e3c16f;
+    color: #546037;
+}
+
+.card {
+    border: 1px solid #546037;
+}
+.card-body{
+    background-color: #546037;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#carouselExampleControls{
+    margin: 50px;
+    height: 33%;
+}
+
+/*flip card CSS */
+
+
+/* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-box {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-box-inner {
+    float: left;
+    width: 100%;
+    height: 100%; 
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side */
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-box-back {
+    background-color: #546037;
+    color: white;
+    transform: rotateY(180deg);
+  }
