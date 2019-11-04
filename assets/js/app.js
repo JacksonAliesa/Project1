@@ -116,7 +116,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let j = 0; j < response.events.length; j++) {
+            for (let j = 0; j < 3; j++) {
                 console.log(response.events[j].name);
                 {
 
@@ -153,7 +153,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let i = 0; i < response.businesses.length; i++) {
+            for (let i = 0; i < 3; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
@@ -215,7 +215,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let j = 0; j < response.events.length; j++) {
+            for (let j = 0; j < 3; j++) {
                 console.log(response.events[j].name);
                 {
 
@@ -252,7 +252,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let i = 0; i < response.businesses.length; i++) {
+            for (let i = 0; i < 3; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
