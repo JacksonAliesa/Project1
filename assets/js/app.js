@@ -42,15 +42,18 @@ var cities = [
         tropicalWeight: 1,
     },
     {
-        loc: "Anchorage, AK",
+        loc: "Anchorage, Alaska",
         nightLifeWeight: 1,
-        tropicalWeight: 1,
-    },
+        tropicalWeight: 1
+    }
 ]
 
 $(document).ready(function () {
 
     $("#submitBtn").on("click", function (event) {
+        $("#events").empty();
+        $("#restaurants").empty();
+        $("#streetview").empty();
         // preventing default 
         event.preventDefault();
         // Let's grab some user input. These numbers will come from our quiz. 
@@ -71,10 +74,8 @@ $(document).ready(function () {
 
         var bestTropicalMatches = [];
 
-
         for (var i = 0; i < cities.length; i++) {
             // console.log ("I love " + cities[i].loc);
-
             if (cities[i].tropicalWeight === tropical) {
                 bestTropicalMatches.push(cities[i]);
                 console.log("THIS MATCHES")
@@ -86,7 +87,9 @@ $(document).ready(function () {
 
         var apiCity = ""
 
-        for (var i = 0; i < 2; i++) {
+        for (var i = 0; i < 3; i++) {
+            console.log("we're in the loop");
+            console.log(bestTropicalMatches[i].nightLifeWeight + " is being compared to " + nightLife);
             if (bestTropicalMatches[i].nightLifeWeight === nightLife) {
                 console.log("THIS MATCHES FOR NIGHTLIFE")
                 apiCity = bestTropicalMatches[i].loc;
@@ -134,6 +137,7 @@ $(document).ready(function () {
 
                     eventImage.attr("src", response.events[j].image_url);
                     eventImage.addClass("eventStyle");
+
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -198,7 +202,17 @@ $(document).ready(function () {
         // V This closes the onclick function. 
     });
 
+    function imgError(image) {
+        image.onerror = "";
+        image.src = "http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png";
+        return true;
+     }
+
     function philadelphia() {
+        $("#events").empty();
+        $("#restaurants").empty();
+        $("#streetview").empty();
+
         apiCity = "Philadelphia";
         var yelpEventQueryURL =
             "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/events?location=" +
@@ -219,7 +233,7 @@ $(document).ready(function () {
             }
         }).then(function (response) {
             for (let j = 0; j < 2; j++) {
-                console.log(response.events[j].name);
+                console.log(response.events[j]);
                 {
 
                     // Creating and storing a div tag
@@ -234,7 +248,10 @@ $(document).ready(function () {
                     // Setting the src attribute of the image to a property pulled off the result item
 
                     eventImage.attr("src", response.events[j].image_url);
+                    eventImage.attr("alt", response.events[j].name);
+                    eventImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
                     eventImage.addClass("eventStyle");
+
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -301,7 +318,7 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
 
     $("#nearMe").on("click", function (event) {
-        
+
         event.preventDefault();
         philadelphia();
     });
