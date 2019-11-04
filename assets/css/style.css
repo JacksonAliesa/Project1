@@ -6,6 +6,7 @@ h1 {
 
 body{
     background-image: url(../images/grey.png);
+    font-family: 'Playfair Display', serif;
 }
 
 
@@ -65,6 +66,16 @@ body{
     border-width: 5px;
 }
 
+#eventSuggest {
+    border: 2px, border, #e3c16f;
+    background-color: #546037;
+    margin: 50px;
+    color: white;
+}
+
+.globeCard {
+    background-color: #546037;
+}
 
 
 
