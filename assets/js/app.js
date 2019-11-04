@@ -116,11 +116,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-<<<<<<< HEAD
-            for (let j = 0; j < 3; j++) {
-=======
             for (let j = 0; j < 2; j++) {
->>>>>>> d0cb9c8476e9c5916a3f9cbe378bc1f27e60e30b
                 console.log(response.events[j].name);
                 {
 
@@ -157,11 +153,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-<<<<<<< HEAD
-            for (let i = 0; i < 3; i++) {
-=======
             for (let i = 0; i < 2; i++) {
->>>>>>> d0cb9c8476e9c5916a3f9cbe378bc1f27e60e30b
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
@@ -223,11 +215,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-<<<<<<< HEAD
-            for (let j = 0; j < 3; j++) {
-=======
             for (let j = 0; j < 2; j++) {
->>>>>>> d0cb9c8476e9c5916a3f9cbe378bc1f27e60e30b
                 console.log(response.events[j].name);
                 {
 
@@ -264,11 +252,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-<<<<<<< HEAD
-            for (let i = 0; i < 3; i++) {
-=======
             for (let i = 0; i < 2; i++) {
->>>>>>> d0cb9c8476e9c5916a3f9cbe378bc1f27e60e30b
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
