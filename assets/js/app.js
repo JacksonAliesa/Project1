@@ -301,6 +301,7 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
 
     $("#nearMe").on("click", function (event) {
+        
         event.preventDefault();
         philadelphia();
     });
