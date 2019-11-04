@@ -41,6 +41,14 @@ body{
 .parallax{
     float: right;
 }
+#globeBody{
+    width: 50%;
+    float: right;
+    
+}
+.youChose{
+    width: 50%;
+}
 
 
 
