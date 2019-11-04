@@ -3,18 +3,25 @@
 ​
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!--bootstrap link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-     <!--fontAwesomeIcons Link-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-    <!--google font link-->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--bootstrap link-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!--fontAwesomeIcons Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!--google font link-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
 
   <!--CSS link-->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
@@ -40,60 +47,63 @@
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
+            <p class="card-text">What type of weather interests you?</p>
 
             <div class="dropdown">
-              <button class="btn btn-lg dropdown-toggle" type="button" id="climate" data-toggle="dropdown"
+              <!-- <button class="btn btn-lg dropdown-toggle" type="button" id="climate" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 Climate
               </button>
               <div class="dropdown-menu" id="climate" aria-labelledby="climateDropdown">
                 <a class="dropdown-item" id="tropical" value="1" href="#">Tropical</a>
                 <a class="dropdown-item" id="arid" value="2" href="#">Arid</a>
-                <a class="dropdown-item" id="polar" value="3" href="#">Polar</a>
-              </div>
+                <a class="dropdown-item" id="polar" value="3" href="#">Polar</a> -->
+              <label for="climate">Climate</label>
+              <select id="climate" class="form-control">
+                <option value="1"> Polar </option>
+                <option value="2"> Arid </option>
+                <option value="3"> Tropical </option>
+              </select>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-
-            <div class="dropdown">
-              <button class="btn btn-lg dropdown-toggle" type="button" id="nightLife" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Nightlife
-              </button>
-              <div class="dropdown-menu" id="nightLife" aria-labelledby="climateDropdown">
-                <a class="dropdown-item" id="one" value="1" href="#">1</a>
-                <a class="dropdown-item" id="two" value="2" href="#">2</a>
-                <a class="dropdown-item" id="three" value="3" href="#">3</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!--DROP DOWN WITH INFO-->
-
-      <div class="col-md-4">
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-            <button type="button" class="btn btn-lg" id="nearMe">Near Me</button>
-
           </div>
         </div>
       </div>
     </div>
+    <div class="col-md-4">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <p class="card-text">What type of party scene?</p>
+
+          <div class="dropdown">
+            <select id="nightLife" class="form-control">
+              <option value="1"> Chill </option>
+              <option value="2"> Family Friendly </option>
+              <option value="3"> Rowdy </option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--DROP DOWN WITH INFO-->
+
+  <div class="col-md-4">
+    <div class="card" style="width: 18rem;">
+      <div class="card-body">
+        <p class="card-text">Want to stay close to home?</p>
+        <button type="button" class="btn btn-lg" id="nearMe">Near Me</button>
+
+      </div>
+    </div>
+  </div>
+  </div>
   <br>
   <br>
 
   <!--submit button-->
   <center>
-  <div class="col-md-4">
+    <div class="col-md-4">
       <div class="card" style="width: 10rem;">
         <div class="card-body">
           <button type="button" class="btn btn-lg" id="submitBtn">Submit</button>
@@ -101,26 +111,27 @@
         </div>
       </div>
     </div>
-  </div>
-</center>
+    </div>
+  </center>
 
-  
-​<div class="container">
+
+  ​<div class="container">
     <div class="youChose">
       <div class="card">
         <div class="card-body">
-        You chose 
-        <div class="container">
+          You chose
+          <div class="container">
             <div class="parallax">
               <figure class="figure">
-                <img src="assets/images/earth-spinning-rotating-animation-24.gif" class="figure-img img-fluid" alt="...">
+                <img src="assets/images/earth-spinning-rotating-animation-24.gif" class="figure-img img-fluid"
+                  alt="...">
               </figure>
             </div>
           </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
   <!--slideshow of travelers-->
   <div class="container">
@@ -148,7 +159,7 @@
       </a>
     </div>
   </div>
-<!--   
+  <!--   
   ​<div class="container">
     <div class="youChose">
       <div class="card">
@@ -177,6 +188,11 @@
     </div>
     ​
   </center> -->
+
+  <div id="events"> This is where events will go. </div>
+  <div id="restaurants"> This is where res. will go. </div>
+  <img id="streetview"/>
+  
 
   ​
   ​
