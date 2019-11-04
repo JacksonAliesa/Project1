@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+​
 
 <head>
   <meta charset="UTF-8">
@@ -8,15 +9,6 @@
   <!--bootstrap link-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <!--fontAwesomeIcons Link-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <!--google font link-->
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-
-  <!--CSS link-->
-  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
-  <!--Bootstrap HTML link-->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
     crossorigin="anonymous"></script>
@@ -26,94 +18,171 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-
+  <!--fontAwesomeIcons Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!--google font link-->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+  ​
+  <!--CSS link-->
+  <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  ​
+  ​
+  ​
   <title>Travel Me</title>
 </head>
+​
 
-<body>
+<body background="assets/images/travelbackground.jpg">
+  <!--jumbotron-->
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
-          <h1 id="banner" class="display-4 mr-3 ml-3">Travel<i class="fas fa-globe-americas"></i>ME</h1>
-          <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
+      <h1 id="banner" class="display-4 mr-3 ml-3">Travel<i class="fas fa-globe-americas"></i>ME</h1>
+      <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
     </div>
   </div>
+  ​
+  ​
+  <!--CLIMATE Buttons!-->
+  <div class="container">
+    <div class="row align-items-end">
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
 
+            <div class="dropdown">
+              <button class="btn btn-lg dropdown-toggle" type="button" id="climate" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Climate
+              </button>
+              <div class="dropdown-menu" id="climate" aria-labelledby="climateDropdown">
+                <a class="dropdown-item" id="tropical" value="1" href="#">Tropical</a>
+                <a class="dropdown-item" id="arid" value="2" href="#">Arid</a>
+                <a class="dropdown-item" id="polar" value="3" href="#">Polar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
 
+            <div class="dropdown">
+              <button class="btn btn-lg dropdown-toggle" type="button" id="nightLife" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Nightlife
+              </button>
+              <div class="dropdown-menu" id="nightLife" aria-labelledby="climateDropdown">
+                <a class="dropdown-item" id="one" value="1" href="#">1</a>
+                <a class="dropdown-item" id="two" value="2" href="#">2</a>
+                <a class="dropdown-item" id="three" value="3" href="#">3</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <!--DROP DOWN WITH INFO-->
 
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+            <button type="button" class="btn btn-lg" id="nearMe">Near Me</button>
 
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--slideshow of travelers-->
+  <div class="container">
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://i.ytimg.com/vi/o4Nw1VgqhnA/maxresdefault.jpg" class="d-block w-100" alt="mountain-view">
+        </div>
+        <div class="carousel-item">
+          <img src="https://wallpaperaccess.com/full/1192101.jpg" class="d-block w-100" alt="Maldives">
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://i1.wp.com/www.valisemag.com/wp-content/uploads/2019/02/Joshua-Tree-Weekend-Itinerary-Featured-2.jpeg?fit=1910%2C1000&ssl=1"
+            class="d-block w-100" alt="JoshuaTree">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+  ​
+  ​
+  <!--Info of city chosen 'fixed' on bottom left
+  'Top 5 things about this city!'-->
+  <!-- <div class="container">
+    <div class="row">
+      <div class="col-5">
+          <div id="cityInfo"> 
+              <div class="flip-box">
+                  <div class="flip-box-inner">
+                    <div class="flip-box-front">
+                      <img src="globe.jpg"> 
+                    </div>
+                    <div class="flip-box-back">
+                      <h2>Travel Often.</h2>
+                    </div>
+                  </div>
+                </div> 
+          </div>  
+      </div>
+    </div>
+  </div>   -->
+  ​
+  <div class="youChose">
+    You chose:
+  </div>
+  ​
+  <!--Globe Image Placement-->
+  <!-- <div class="container">
+  <div id="globe">
+  <figure class="figure">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQf6Q_YkQ5ZjnjwImaRqrNNSdtrEYDIhUl5XgvkPywZqFtZjq2Bmw&s" class="figure-img img-fluid" alt="...">
+     
+    </figure>
+    </div>
+  </div> -->
+
+  ​
+  <!--Trying something with spinning globe-->
+  <center>
+    <div class="container">
+      <div class="parallax">
+        <figure class="figure">
+          <img src="assets/images/earth-spinning-rotating-animation-24.gif" class="figure-img img-fluid" alt="...">
+        </figure>
+      </div>
+    </div>
+    ​
+  </center>
+
+  ​
+  ​
   <!-- Jquery Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--Javascript link-->
   <script type="text/javascript" src="assets/js/app.js"></script>
-
-
-  <!--CLIMATE Buttons!-->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-4">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" class="climate" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Climate
-          </button>
-          <div class="dropdown-menu" id="climate" aria-labelledby="climateDropdown">
-            <a class="dropdown-item" id="tropical" value="1" href="#">Tropical</a>
-            <a class="dropdown-item" id="arid"  value="2" href="#">Arid</a>
-            <a class="dropdown-item" id="polar" value="3" href="#">Polar</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" class="nightLife" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Nightlife
-          </button>
-          <div class="dropdown-menu" id="nightLife" aria-labelledby="climateDropdown">
-            <a class="dropdown-item" id="one" value="1" href="#">1</a>
-            <a class="dropdown-item" id="two" value="2" href="#">2</a>
-            <a class="dropdown-item" id="three" value="3" href="#">3</a>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-sm-4">
-        <button type="button" class="btn btn-primary" id="nearMe">Near Me</button>
-        <!--Random events restaurants near by using Yelp! API?-->
-      </div>
-    </div>
-  </div>
-
-  <br>
-
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-12">
-        <button type="button" class="btn btn-primary" id="travelMe">Travel ME!</button>
-      </div>
-    </div>
-  </div>
-
-  <!--Spinning globe place holder-->
-
-
-<div
-  class="climateResult">
-</div>
-
-<div 
-class="nightLifeResult">
-</div>
-
-<div
-class="youChose">
-You chose:
-</div>
-
-
-
+  ​
+  ​
 </body>
+​
 
 </html>
