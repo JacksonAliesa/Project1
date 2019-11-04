@@ -2,35 +2,56 @@ h1 {
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
-/* .jumbotron{
-    background-image: url("https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjqkbfDtcnlAhVPJKwKHfsfDcYQjRx6BAgBEAQ&url=https%3A%2F%2Fwww.123rf.com%2Fphoto_43850571_earthy-background-image-and-design-element.html&psig=AOvVaw3NqrPf4TnWO2qUTzzn6BGh&ust=1572711454222446");
-    background-color: #b58c5b;
-} */
-/* 
-#banner {
-    
-    background-color: #DAD7CD;
-    float: right;
-} */
 
-/* body{
-    background-image: url(
-} */
 
-.jumbotron{
-    background-image: url(../images/banner2.PNG);
-    background-repeat: no-repeat;
-    
-
+body{
+    background-image: url(../images/grey.png);
 }
 
-.background{
+
+ .jumbotron{
+    background-image: url(../images/banner.PNG);
+    background-size: 51%;
+    background-repeat: no-repeat;
+    background-color: #e3c16f;
+    color: #546037;
+    
+}
+
+#climate, #nightLife, #nearMe, #submitBtn {
+    background-color: #e3c16f;
+    color: #546037;
+    border: 2px solid #546037;
+}
+
+.card {
+    border: 1px solid #546037;
+}
+.card-body{
+    background-color: #546037;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+#carouselExampleControls{
+    margin: 50px;
+    height: 33%;
+    
+}
+.parallax{
+    float: right;
+}
+
+
+
+
+/* .background{
     background-image: url(../images/travelbackground.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
 
-};
+}; */
 
 
