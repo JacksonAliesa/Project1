@@ -37,7 +37,7 @@ var cities = [
         tropicalWeight: 1,
     },
     {
-        loc: "Zagora, Morocco",
+        loc: "Reston, Virginia",
         nightLifeWeight: 2,
         tropicalWeight: 1,
     },
@@ -86,7 +86,7 @@ $(document).ready(function () {
 
         var apiCity = ""
 
-        for (var i = 0; i < bestTropicalMatches.length; i++) {
+        for (var i = 0; i < 2; i++) {
             if (bestTropicalMatches[i].nightLifeWeight === nightLife) {
                 console.log("THIS MATCHES FOR NIGHTLIFE")
                 apiCity = bestTropicalMatches[i].loc;
@@ -116,7 +116,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let j = 0; j < response.events.length; j++) {
+            for (let j = 0; j < 2; j++) {
                 console.log(response.events[j].name);
                 {
 
@@ -131,7 +131,9 @@ $(document).ready(function () {
                     var eventImage = $("<img>");
                     // Setting the src attribute of the image to a property pulled off the result item
 
+
                     eventImage.attr("src", response.events[j].image_url);
+                    eventImage.addClass("eventStyle");
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -153,7 +155,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let i = 0; i < response.businesses.length; i++) {
+            for (let i = 0; i < 2; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
@@ -165,6 +167,7 @@ $(document).ready(function () {
                 var bizImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
+                bizImage.addClass("eventStyle");
 
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
@@ -215,7 +218,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let j = 0; j < response.events.length; j++) {
+            for (let j = 0; j < 2; j++) {
                 console.log(response.events[j].name);
                 {
 
@@ -231,6 +234,7 @@ $(document).ready(function () {
                     // Setting the src attribute of the image to a property pulled off the result item
 
                     eventImage.attr("src", response.events[j].image_url);
+                    eventImage.addClass("eventStyle");
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -252,7 +256,7 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
-            for (let i = 0; i < response.businesses.length; i++) {
+            for (let i = 0; i < 2; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
@@ -264,6 +268,7 @@ $(document).ready(function () {
                 var bizImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
+                bizImage.addClass("eventStyle");
 
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
@@ -296,6 +301,7 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
 
     $("#nearMe").on("click", function (event) {
+        
         event.preventDefault();
         philadelphia();
     });
