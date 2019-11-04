@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 var cities = [
     {
@@ -104,7 +103,3 @@ $(document).ready(function () {
 
 
 
-=======
-// testing 
-// testing 
->>>>>>> 2a7b265542e04fc5a8c1a816ed0332dda98164c9

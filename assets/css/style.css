@@ -27,15 +27,14 @@ body{
     
 }
 
-#climate, #nightLife, #nearMe{
+#climate, #nightLife, #nearMe, #submitBtn {
     background-color: #e3c16f;
     color: #546037;
     border: 2px solid #546037;
 }
-#quote{
-    background-color: #e3c16f;
-    color: #546037;
-}
+/* #submitBtn{
+    justify-content: center;
+} */
 
 .card {
     border: 1px solid #546037;
@@ -49,6 +48,7 @@ body{
 #carouselExampleControls{
     margin: 50px;
     height: 33%;
+    
 }
 
 /*flip card CSS */

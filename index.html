@@ -18,6 +18,8 @@
   <!--CSS link-->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 
+
+
   <title>Travel Me</title>
 </head>
 
@@ -25,12 +27,10 @@
   <!--jumbotron-->
   <div class="container">
     <div class="jumbotron jumbotron-fluid">
-        
           <h1 id="banner" class="display-4 mr-3 ml-3">Travel<i class="fas fa-globe-americas"></i>ME</h1>
           <!-- <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p> -->
-       
-      </div>
     </div>
+  </div>
 
 
   <!--CLIMATE Buttons!-->
@@ -39,14 +39,17 @@
       <div class="col-md-4">
           <div class="card" style="width: 18rem;">
               <div class="card-body">
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content</p>
-          
+                  <p class="card-text">With supporting text below as a natural lead-in to additional content</p>          
          <div class="dropdown">
           <button class="btn btn-lg dropdown-toggle" type="button" id="climate" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Climate
           </button>
-          <!--DROP DOWN WITH INFO-->
+          <div class="dropdown-menu" id="climate" aria-labelledby="climateDropdown">
+            <a class="dropdown-item" id="tropical" value="1" href="#">Tropical</a>
+            <a class="dropdown-item" id="arid"  value="2" href="#">Arid</a>
+            <a class="dropdown-item" id="polar" value="3" href="#">Polar</a>
+          </div>
         </div>
       </div>
       </div>
@@ -55,19 +58,22 @@
           <div class="card" style="width: 18rem;">
               <div class="card-body">
                   <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-          
+        <!--nightlife button-->  
         <div class="dropdown">
           <button class="btn btn-lg dropdown-toggle" type="button" id="nightLife" data-toggle="dropdown"
             aria-haspopup="true" aria-expanded="false">
             Nightlife
           </button>
+          <div class="dropdown-menu" id="nightLife" aria-labelledby="climateDropdown">
+            <a class="dropdown-item" id="one" value="1" href="#">1</a>
+            <a class="dropdown-item" id="two" value="2" href="#">2</a>
+            <a class="dropdown-item" id="three" value="3" href="#">3</a>
+          </div>
         </div>
       </div>
       </div>
       </div>
-     
-        <!--DROP DOWN WITH INFO-->
-      
+  <!--Near me button-->    
       <div class="col-md-4">
           <div class="card" style="width: 18rem;">
               <div class="card-body">
@@ -78,6 +84,20 @@
     </div>
   </div>
 </div>
+</div>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+      <div class="col-md-6">
+          <div class="card" style="width: 10rem;">
+              <div class="card-body">
+                  
+        <button type="button" class="btn btn-lg" id="submitBtn">Search</button>
+
+      </div>
+      </div>
+  </div>
 </div>
 <!--slideshow of travelers-->
 <div class="container">
@@ -126,6 +146,10 @@
     </div>
   </div>   -->
 
+<div
+class="youChose">
+You chose:
+</div>
 
   <!--Globe Image Placement-->
   <!-- <div class="container">
