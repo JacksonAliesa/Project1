@@ -91,7 +91,7 @@ $(document).ready(function () {
                 console.log("THIS MATCHES FOR NIGHTLIFE")
                 apiCity = bestTropicalMatches[i].loc;
                 console.log("This is the city you chose " + apiCity);
-                $(".youChose").html("You Chose: " + apiCity);
+                $(".youChose").html("" + apiCity);
                 console.log(apiCity);
                 console.log("API CITY" + apiCity);
             }
