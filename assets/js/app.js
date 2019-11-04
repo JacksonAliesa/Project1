@@ -131,7 +131,9 @@ $(document).ready(function () {
                     var eventImage = $("<img>");
                     // Setting the src attribute of the image to a property pulled off the result item
 
+
                     eventImage.attr("src", response.events[j].image_url);
+                    eventImage.addClass("eventStyle");
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -165,6 +167,7 @@ $(document).ready(function () {
                 var bizImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
+                bizImage.addClass("eventStyle");
 
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
@@ -231,6 +234,7 @@ $(document).ready(function () {
                     // Setting the src attribute of the image to a property pulled off the result item
 
                     eventImage.attr("src", response.events[j].image_url);
+                    eventImage.addClass("eventStyle");
 
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
@@ -264,6 +268,7 @@ $(document).ready(function () {
                 var bizImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
+                bizImage.addClass("eventStyle");
 
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
@@ -296,6 +301,7 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
 
     $("#nearMe").on("click", function (event) {
+        
         event.preventDefault();
         philadelphia();
     });
