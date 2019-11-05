@@ -53,7 +53,15 @@ body{
 }
 .youChose{
     width: 50%;
+    color: white;
 }
+
+a:link {
+    color: white;
+  }
+a:visited {
+    color: white; 
+  }
 
 .cardGlobe{
     float: right;
