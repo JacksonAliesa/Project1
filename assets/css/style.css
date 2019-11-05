@@ -48,7 +48,7 @@ body{
 }
 #globeBody{
     width: 50%;
-    float: right;
+    /* float: right; */
     
 }
 .youChose{
@@ -78,6 +78,11 @@ body{
     background-color: #546037;
 }
 
+<<<<<<< HEAD
+p {
+    font-family: 'Playfair Display', serif;
+};
+=======
 #restaurants, #events {
     white-space: pre-line;
 }
@@ -87,6 +92,7 @@ body{
 }
 
 
+>>>>>>> 9b842f8d44db81d408e31e85c89f45c1252bea03
 
 
 

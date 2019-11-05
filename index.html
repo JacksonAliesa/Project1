@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 ​
-
+​
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,16 +22,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!--google font link-->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-
+  
+​
   <!--CSS link-->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-
-
-
+​
+​
+​
   <title>Travel Me</title>
 </head>
 ​
-
+​
 <body background="assets/images/travelbackground.jpg">
   <!--jumbotron-->
   <div class="container">
@@ -43,12 +44,12 @@
   ​
   <!--CLIMATE Buttons!-->
   <div class="container">
-    <div class="row align-items-end">
+    <div class="row align-items-end row text-center h-100">
       <div class="col-md-4 offset-2">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">Step One: Choose your preferred climate for your next getaway.</p>
-
+            <p class="card-text">STEP ONE:</p> <p>Choose your preferred climate for your next getaway.</p>
+​
             <div class="dropdown">
               <select id="climate" class="form-control">
                   <option value ="" selected disabled> Choose here</option>
@@ -63,8 +64,8 @@
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">Step Two: Choose your preferred evening experience.</p>
-
+            <p class="card-text">STEP TWO:</p><p>Choose your preferred evening experience.</p>
+​
             <div class="dropdown">
               <div class="dropdown">
                   <select id="nightLife" class="form-control">
@@ -80,17 +81,17 @@
       </div>
     </div>
   </div>
-
+​
   <br>
   <br>
-
+​
   <!--submit button-->
   <center>
     <div class="col-md-4">
       <div class="card" style="width: 10rem;">
         <div class="card-body">
           <button type="button" class="btn btn-lg" id="submitBtn">Submit</button>
-
+​
         </div>
       </div>
     </div>
@@ -98,24 +99,25 @@
   
 <br>
 <br>
-
+​
   <!--DROP DOWN WITH INFO-->
-
+​
   <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
-          <p class="card-text">Optional: Explore your location.<br><br></p>
+          <p class="card-text">OPTIONAL:</p>
+            <p>Explore your location.<br><br></p>
           <button type="button" class="btn btn-lg" id="nearMe">Near Me</button>
-
+​
     </div>
   </div>
 </div>
 </div>
 </center>
-
+​
 <br>
 <br>
-
+​
 <!--populated results-->
 <center>
 <div class="container">
@@ -141,37 +143,37 @@
         <div class="col-md-4 offset-3">
           <h4><u>Upcoming Events:</u></h4>
           <div id="events">
-
+​
           </div>
        <div>
       </div>
     </div>
  
-
+​
 <!--section for resturants-->
-
+​
 <div class="row">
   <div class="col-md-4">
     <h4><u>Restaurants:</u></h4>
     <div id="restaurants"> 
     
-
+​
       </div>
     </div>
     </div>
     
   </div>
-
-
+​
+​
 <br>
 <br>
-
+​
 <!--image for street view-->
 <center>
   <img id="streetview"/>
 </center>
   
-
+​
   ​
   <!-- Jquery Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
