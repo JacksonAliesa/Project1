@@ -2,7 +2,7 @@
 var cities = [
     {
         loc: "Maui, HI",
-        nightLifeWeight: 3,
+        nightLifeWeight: 1,
         tropicalWeight: 3,
 
     },
@@ -13,31 +13,31 @@ var cities = [
     },
     {
         loc: "Miami, FL",
-        nightLifeWeight: 1,
+        nightLifeWeight: 3,
         tropicalWeight: 3,
     },
     {
-        loc: "Manila, Phillipines",
-        nightLifeWeight: 3,
-        tropicalWeight: 2,
-    },
-    {
-        loc: "Cancun, Mexico",
-        nightLifeWeight: 2,
-        tropicalWeight: 2,
-    },
-    {
-        loc: "Big Sur, CA",
+        loc: "Albuquerque, NM",
         nightLifeWeight: 1,
+        tropicalWeight: 2,
+    },
+    {
+        loc: "Las Vegas, Nevada",
+        nightLifeWeight: 3,
         tropicalWeight: 2,
     },
     {
         loc: "Phoenix, AZ",
+        nightLifeWeight: 2,
+        tropicalWeight: 2,
+    },
+    {
+        loc: "Prague, Czech Republic",
         nightLifeWeight: 3,
         tropicalWeight: 1,
     },
     {
-        loc: "Reston, Virginia",
+        loc: "Oslo, Norway",
         nightLifeWeight: 2,
         tropicalWeight: 1,
     },
@@ -125,7 +125,7 @@ $(document).ready(function () {
             for (let j = 0; j < 2; j++) {
                 console.log(response.events[j].name);
                 {
-
+            
                     // Creating and storing a div tag
                     var eventDiv = $("<div>");
 
@@ -140,6 +140,7 @@ $(document).ready(function () {
 
                     eventImage.attr("src", response.events[j].image_url);
                     eventImage.addClass("eventStyle");
+                    eventImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
 
 
                     // Appending the paragraph and image tag
@@ -148,6 +149,8 @@ $(document).ready(function () {
 
                     // Prependng 
                     $("#events").prepend(eventDiv);
+
+                    
 
                 }
             }
@@ -178,6 +181,7 @@ $(document).ready(function () {
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
                 bizImage.addClass("eventStyle");
+                bizImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
 
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
@@ -207,12 +211,6 @@ $(document).ready(function () {
         console.log(apiCity);
         // V This closes the onclick function. 
     });
-
-    function imgError(image) {
-        image.onerror = "";
-        image.src = "http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png";
-        return true;
-     }
 
     function philadelphia() {
 
@@ -333,6 +331,7 @@ $(document).ready(function () {
 
     // Closing the .onready function. 
 });
+
 
 
 
