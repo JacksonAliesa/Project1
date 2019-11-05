@@ -125,7 +125,7 @@ $(document).ready(function () {
             for (let j = 0; j < 2; j++) {
                 console.log(response.events[j].name);
                 {
-
+            
                     // Creating and storing a div tag
                     var eventDiv = $("<div>");
 
@@ -149,6 +149,8 @@ $(document).ready(function () {
 
                     // Prependng 
                     $("#events").prepend(eventDiv);
+
+                    
 
                 }
             }
@@ -329,6 +331,7 @@ $(document).ready(function () {
 
     // Closing the .onready function. 
 });
+
 
 
 
