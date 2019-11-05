@@ -78,13 +78,11 @@ body{
     background-color: #546037;
 }
 
-<<<<<<< HEAD
-p {
-    font-family: 'Playfair Display', serif;
-};
-=======
-#restaurants, #events {
+#events {
     white-space: pre-line;
+}
+#restaurants {
+    white-space: nowrap;
 }
 
 #streetview {
@@ -92,7 +90,6 @@ p {
 }
 
 
->>>>>>> 9b842f8d44db81d408e31e85c89f45c1252bea03
 
 
 
