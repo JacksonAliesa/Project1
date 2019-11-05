@@ -4,47 +4,56 @@ var cities = [
         loc: "Maui, HI",
         nightLifeWeight: 1,
         tropicalWeight: 3,
+        url: "https://en.wikipedia.org/wiki/Maui",
 
     },
     {
         loc: "San Juan, Puerto Rico",
         nightLifeWeight: 2,
         tropicalWeight: 3,
+        url:"https://en.wikipedia.org/wiki/San_Juan,_Puerto_Rico"
     },
     {
         loc: "Miami, FL",
         nightLifeWeight: 3,
         tropicalWeight: 3,
+        url: "https://en.wikipedia.org/wiki/Miami"
     },
     {
         loc: "Albuquerque, NM",
         nightLifeWeight: 1,
         tropicalWeight: 2,
+        url: "https://en.wikipedia.org/wiki/Albuquerque,_New_Mexico"
     },
     {
         loc: "Las Vegas, Nevada",
         nightLifeWeight: 3,
         tropicalWeight: 2,
+        url: "https://en.wikipedia.org/wiki/Las_Vegas"
     },
     {
         loc: "Phoenix, AZ",
         nightLifeWeight: 2,
         tropicalWeight: 2,
+        url: "https://en.wikipedia.org/wiki/Phoenix,_Arizona"
     },
     {
         loc: "Prague, Czech Republic",
         nightLifeWeight: 3,
         tropicalWeight: 1,
+        url: "https://en.wikipedia.org/wiki/Prague"
     },
     {
         loc: "Oslo, Norway",
         nightLifeWeight: 2,
         tropicalWeight: 1,
+        url: "https://en.wikipedia.org/wiki/Oslo"
     },
     {
         loc: "Anchorage, Alaska",
         nightLifeWeight: 1,
-        tropicalWeight: 1
+        tropicalWeight: 1,
+        url: "https://en.wikipedia.org/wiki/Anchorage,_Alaska"
     }
 ]
 
@@ -54,6 +63,7 @@ $(document).ready(function () {
         $("#events").empty();
         $("#restaurants").empty();
         $("#streetview").empty();
+        $(".youChose").empty();
         // preventing default 
         event.preventDefault();
         // Let's grab some user input. These numbers will come from our quiz. 
@@ -93,8 +103,17 @@ $(document).ready(function () {
             if (bestTropicalMatches[i].nightLifeWeight === nightLife) {
                 console.log("THIS MATCHES FOR NIGHTLIFE")
                 apiCity = bestTropicalMatches[i].loc;
+                var theLink = $("<a>", {
+                    text: apiCity,
+                    title: "some title",
+                    href: bestTropicalMatches[i].url, 
+                    target:"_blank"
+                })
+
+                // apiCity.attr('href', bestTropicalMatches[i].url);
                 console.log("This is the city you chose " + apiCity);
-                $(".youChose").html("" + apiCity);
+                // $(".youChose").html("" + apiCity);
+                $(".youChose").append(theLink);
                 console.log(apiCity);
                 console.log("API CITY" + apiCity);
             }
@@ -323,8 +342,15 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
 
     $("#nearMe").on("click", function (event) {
-
         event.preventDefault();
+        $(".youChose").empty();
+        var thePhillyLink = $("<a>", {
+            text: "Philadelphia, Pennsylvania",
+            title: "some title",
+            href: "https://en.wikipedia.org/wiki/Philadelphia", 
+            target:"_blank"
+        })
+        $(".youChose").append(thePhillyLink);
         philadelphia();
     });
 
