@@ -60,21 +60,30 @@ body{
 }
 
 .eventStyle {
-    height:100px;
-    width:100px;
+    height:150px;
+    width:150px;
     border-style: solid;
     border-width: 5px;
+    border-color: #e3c16f;
 }
 
 #eventSuggest {
     border: 2px, border, #e3c16f;
     background-color: #546037;
-    margin: 50px;
-    color: white;
+    color:#e3c16f;
+    
 }
 
 .globeCard {
     background-color: #546037;
+}
+
+#restaurants, #events {
+    white-space: pre-line;
+}
+
+#streetview {
+    border: 2px solid #e3c16f;
 }
 
 
