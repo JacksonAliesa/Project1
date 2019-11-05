@@ -1,4 +1,3 @@
-
 var cities = [
     {
         loc: "Maui, HI",
@@ -69,15 +68,11 @@ $(document).ready(function () {
         // Let's grab some user input. These numbers will come from our quiz. 
         var tropical;
         var nightLife;
-
-
         // Grabbing Input. 
         tropical = parseInt($("#climate").val());
-        console.log(tropical);
+        // console.log(tropical);
         nightLife = parseInt($("#nightLife").val());
-        console.log(nightLife);
-
-
+        // console.log(nightLife);
         // Pushing the value to somewhere on the page. 
         $(".climateResult").text(tropical);
         $(".nightLifeResult").text(nightLife);
@@ -88,20 +83,20 @@ $(document).ready(function () {
             // console.log ("I love " + cities[i].loc);
             if (cities[i].tropicalWeight === tropical) {
                 bestTropicalMatches.push(cities[i]);
-                console.log("THIS MATCHES")
-                console.log("These are the cities that match " + tropical)
-                console.log(cities[i]);
+                // console.log("THIS MATCHES")
+                // console.log("These are the cities that match " + tropical)
+                // console.log(cities[i]);
             };
-            console.log(bestTropicalMatches);
+            // console.log(bestTropicalMatches);
         };
 
         var apiCity = ""
 
         for (var i = 0; i < 3; i++) {
-            console.log("we're in the loop");
-            console.log(bestTropicalMatches[i].nightLifeWeight + " is being compared to " + nightLife);
+            // console.log("we're in the loop");
+            // console.log(bestTropicalMatches[i].nightLifeWeight + " is being compared to " + nightLife);
             if (bestTropicalMatches[i].nightLifeWeight === nightLife) {
-                console.log("THIS MATCHES FOR NIGHTLIFE")
+                // console.log("THIS MATCHES FOR NIGHTLIFE")
                 apiCity = bestTropicalMatches[i].loc;
                 var theLink = $("<a>", {
                     text: apiCity,
@@ -109,17 +104,14 @@ $(document).ready(function () {
                     href: bestTropicalMatches[i].url, 
                     target:"_blank"
                 })
-
                 // apiCity.attr('href', bestTropicalMatches[i].url);
-                console.log("This is the city you chose " + apiCity);
+                // console.log("This is the city you chose " + apiCity);
                 // $(".youChose").html("" + apiCity);
                 $(".youChose").append(theLink);
-                console.log(apiCity);
-                console.log("API CITY" + apiCity);
+                // console.log(apiCity);
+                // console.log("API CITY" + apiCity);
             }
-
         }
-
         var yelpEventQueryURL =
             "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/events?location=" +
             apiCity;
@@ -127,8 +119,6 @@ $(document).ready(function () {
             "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" +
             apiCity +
             "&term=food";
-
-
         //ajax function to find events in the area provided 
         $.ajax({
             url: yelpEventQueryURL,
@@ -142,39 +132,26 @@ $(document).ready(function () {
             $("#restaurants").empty();
             $("#streetview").empty();
             for (let j = 0; j < 2; j++) {
-                console.log(response.events[j].name);
+                // console.log(response.events[j].name);
                 {
-            
                     // Creating and storing a div tag
                     var eventDiv = $("<div>");
-
                     // Creating a paragraph tag
                     var par = $("<p>").text(response.events[j].name);
-
                     // Creating and storing an image tag
-
                     var eventImage = $("<img>");
                     // Setting the src attribute of the image to a property pulled off the result item
-
-
                     eventImage.attr("src", response.events[j].image_url);
                     eventImage.addClass("eventStyle");
                     eventImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
-
-
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
                     eventDiv.append(eventImage);
-
                     // Prependng 
                     $("#events").prepend(eventDiv);
-
-                    
-
                 }
             }
         });
-
         //ajax function to find resutarunts in the area provided
         $.ajax({
             url: yelpResturantQueryURL,
@@ -188,24 +165,20 @@ $(document).ready(function () {
             $("#restaurants").empty();
           
             for (let i = 0; i < 2; i++) {
-                console.log(response.businesses[i])
+                // console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
-
                 // Creating a paragraph tag
                 var p = $("<p>").text(response.businesses[i].name);
-
                 // Creating and storing an image tag
                 var bizImage = $("<img>");
                 // Setting the src attribute of the image to a property pulled off the result item
                 bizImage.attr("src", response.businesses[i].image_url);
                 bizImage.addClass("eventStyle");
                 bizImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
-
                 // Appending the paragraph and image tag
                 bizDiv.append(p);
                 bizDiv.append(bizImage);
-
                 // Prependng 
                 $("#restaurants").prepend(bizDiv);
             }
@@ -227,7 +200,7 @@ $(document).ready(function () {
             }
 
         );
-        console.log(apiCity);
+        // console.log(apiCity);
         // V This closes the onclick function. 
     });
 
@@ -241,8 +214,6 @@ $(document).ready(function () {
             "https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?location=" +
             apiCity +
             "&term=food";
-
-
         //ajax function to find events in the area provided 
         $.ajax({
             url: yelpEventQueryURL,
@@ -255,37 +226,28 @@ $(document).ready(function () {
             $("#events").empty();
             $("#streetview").empty();
             for (let j = 0; j < 2; j++) {
-                console.log(response.events[j]);
+                // console.log(response.events[j]);
                 {
-
                     // Creating and storing a div tag
                     var eventDiv = $("<div>");
-
                     // Creating a paragraph tag
                     var par = $("<p>").text(response.events[j].name);
-
                     // Creating and storing an image tag
-
                     var eventImage = $("<img>");
                     // Setting the src attribute of the image to a property pulled off the result item
-
                     eventImage.attr("src", response.events[j].image_url);
                     eventImage.attr("alt", response.events[j].name);
                     eventImage.attr("onError", "this.onerror=null;this.src='http://www.stleos.uq.edu.au/wp-content/uploads/2016/08/image-placeholder.png';");
                     eventImage.addClass("eventStyle");
-
-
                     // Appending the paragraph and image tag
                     eventDiv.append(par);
                     eventDiv.append(eventImage);
-
                     // Prependng 
                     $("#events").prepend(eventDiv);
 
                 }
             }
         });
-
         //ajax function to find resutarunts in the area provided
         $.ajax({
             url: yelpResturantQueryURL,
@@ -298,7 +260,7 @@ $(document).ready(function () {
             $("#restaurants").empty();
             $("#streetview").empty();
             for (let i = 0; i < 2; i++) {
-                console.log(response.businesses[i])
+                // console.log(response.businesses[i])
                 // Creating and storing a div tag
                 var bizDiv = $("<div>");
 
@@ -340,7 +302,6 @@ $(document).ready(function () {
 
     }
     // ADDING the AJAX BELOW  
-
     $("#nearMe").on("click", function (event) {
         event.preventDefault();
         $(".youChose").empty();
@@ -353,8 +314,6 @@ $(document).ready(function () {
         $(".youChose").append(thePhillyLink);
         philadelphia();
     });
-
-
     // Closing the .onready function. 
 });
 
