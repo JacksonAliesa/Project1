@@ -95,6 +95,12 @@ a:visited {
 
 #streetview {
     border: 2px solid #e3c16f;
+    margin-bottom:20px;
+    margin-top:-10px;
+}
+
+.hideThis {
+    display:none
 }
 
 

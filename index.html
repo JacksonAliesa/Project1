@@ -2,6 +2,7 @@
 <html lang="en">
 ​
 ​
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,17 +23,18 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!--google font link-->
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
-  
-​
+
+  ​
   <!--CSS link-->
   <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
-​
-​
-​
+  ​
+  ​
+  ​
   <title>Travel Me</title>
 </head>
 ​
 ​
+
 <body background="assets/images/travelbackground.jpg">
   <!--jumbotron-->
   <div class="container">
@@ -48,11 +50,12 @@
       <div class="col-md-4 offset-2">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">STEP ONE:</p> <p>Choose your preferred climate for your next getaway.</p>
-​
+            <p class="card-text">STEP ONE:</p>
+            <p>Choose your preferred climate for your next getaway.</p>
+            ​
             <div class="dropdown">
               <select id="climate" class="form-control">
-                  <option value ="" selected disabled> Choose here</option>
+                <option value="" selected disabled> Choose here</option>
                 <option value="1"> Polar </option>
                 <option value="2"> Arid </option>
                 <option value="3"> Tropical </option>
@@ -64,120 +67,125 @@
       <div class="col-md-4">
         <div class="card" style="width: 18rem;">
           <div class="card-body">
-            <p class="card-text">STEP TWO:</p><p>Choose your preferred evening experience.</p>
-​
+            <p class="card-text">STEP TWO:</p>
+            <p>Choose your preferred evening experience.</p>
+            ​
             <div class="dropdown">
               <div class="dropdown">
-                  <select id="nightLife" class="form-control">
-                      <option value ="" selected disabled> Choose here</option>
-                    <option value="1"> Chill </option>
-                    <option value="2"> Family Friendly </option>
-                    <option value="3"> Rowdy </option>
-                  </select>
-                </div>
+                <select id="nightLife" class="form-control">
+                  <option value="" selected disabled> Choose here</option>
+                  <option value="1"> Chill </option>
+                  <option value="2"> Family Friendly </option>
+                  <option value="3"> Rowdy </option>
+                </select>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-​
+  ​
   <br>
   <br>
-​
+  ​
   <!--submit button-->
   <center>
     <div class="col-md-4">
       <div class="card" style="width: 10rem;">
         <div class="card-body">
           <button type="button" class="btn btn-lg" id="submitBtn">Submit</button>
-​
+          ​
         </div>
       </div>
     </div>
     </div>
-  
-<br>
-<br>
-​
-  <!--DROP DOWN WITH INFO-->
-​
-  <div class="col-md-4">
+
+    <br>
+    <br>
+    ​
+    <!--DROP DOWN WITH INFO-->
+    ​
+    <div class="col-md-4">
       <div class="card" style="width: 18rem;">
         <div class="card-body">
           <p class="card-text">OPTIONAL:</p>
-            <p>Explore your location.<br><br></p>
+          <p>Explore your location.<br><br></p>
           <button type="button" class="btn btn-lg" id="nearMe">Near Me</button>
-​
+          ​
+        </div>
+      </div>
     </div>
-  </div>
-</div>
-</div>
-</center>
-​
-<br>
-<br>
-​
-<!--populated results-->
-<center>
-<div class="container">
-<div class="card globeCard" style="width: 18rem;">
-    <img src="assets/images/earth-spinning-rotating-animation-24.gif" class="figure-img img-fluid" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title"></h5>
-      <h7><p class="youChose" style="color: white;"></p><h7>
-      
     </div>
-  </div>
-</div>
-</center>
-<br>
-<br>
+  </center>
+  ​
+  <br>
+  <br>
+  ​
+  <!--populated results-->
+  <center>
+    <div class="container">
+      <div class="card globeCard" style="width: 18rem;">
+        <img src="assets/images/earth-spinning-rotating-animation-24.gif" class="figure-img img-fluid"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <h7>
+            <p class="youChose" style="color: white;"></p>
+            <h7>
+
+        </div>
+      </div>
+    </div>
+  </center>
+  <br>
+  <br>
 
 
   <!--section for events-->
-  
-  <div class="container" id="eventSuggest">
+  <div class="hideThis">
+
+    <div class="container" id="eventSuggest">
       <h1>Suggested things to do while visiting:</h1><br>
-    <div class="row">
+      <div class="row">
         <div class="col-md-4 offset-3">
           <h4><u>Upcoming Events:</u></h4>
           <div id="events">
           </div>
-       <div>
+          <div>
+          </div>
+        </div>
+    
+      ​
+      <!--section for resturants-->
+      ​
+      <div class="row">
+        <div class="col-md-4">
+          <h4><u>Restaurants:</u></h4>
+          <div id="restaurants">
+          </div>
+        </div>
       </div>
     </div>
- 
-​
-<!--section for resturants-->
-​
-<div class="row">
-  <div class="col-md-4">
-    <h4><u>Restaurants:</u></h4>
-    <div id="restaurants"> 
-    </div>
+
+    ​
+    ​
+    <br>
+    <br>
+    ​
+    <!--image for street view-->
+    <center>
+      <img id="streetview" />
+    </center>
+
   </div>
-</div>
-</div>
-
-​
-​
-<br>
-<br>
-​
-<!--image for street view-->
-<center>
-  <img id="streetview"/>
-</center>
-
-</div>
-  
-​
+  ​
   ​
   <!-- Jquery Link -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!--Javascript link-->
-  <script type="text/javascript" src="assets/js/app.js"></script>  ​
+  <script type="text/javascript" src="assets/js/app.js"></script> ​
   ​
 </body>
+
 </html>
