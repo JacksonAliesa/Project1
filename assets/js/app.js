@@ -59,6 +59,7 @@ var cities = [
 $(document).ready(function () {
 
     $("#submitBtn").on("click", function (event) {
+        $(".hideThis").show();
         $("#events").empty();
         $("#restaurants").empty();
         $("#streetview").empty();
@@ -304,6 +305,7 @@ $(document).ready(function () {
     // ADDING the AJAX BELOW  
     $("#nearMe").on("click", function (event) {
         event.preventDefault();
+        $(".hideThis").show();
         $(".youChose").empty();
         var thePhillyLink = $("<a>", {
             text: "Philadelphia, Pennsylvania",
