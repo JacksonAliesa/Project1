@@ -119,6 +119,9 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
+            $("#events").empty();
+            $("#restaurants").empty();
+            $("#streetview").empty();
             for (let j = 0; j < 2; j++) {
                 console.log(response.events[j].name);
                 {
@@ -159,6 +162,9 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
+           
+            $("#restaurants").empty();
+          
             for (let i = 0; i < 2; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
@@ -209,9 +215,6 @@ $(document).ready(function () {
      }
 
     function philadelphia() {
-        $("#events").empty();
-        $("#restaurants").empty();
-        $("#streetview").empty();
 
         apiCity = "Philadelphia";
         var yelpEventQueryURL =
@@ -232,6 +235,8 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
+            $("#events").empty();
+            $("#streetview").empty();
             for (let j = 0; j < 2; j++) {
                 console.log(response.events[j]);
                 {
@@ -273,6 +278,8 @@ $(document).ready(function () {
                     "Bearer Vzx_vtYgXyuQd5qVflbkVSgghfvkjs1d3wpPRAJyDIquzAexxHQJVBemA40g8bJDRU3H3-hi5w_sN45oyivu02iJWuebwe4GIIn9IfHMO8Zrrh4-IADbt4ZJaAO7XXYx"
             }
         }).then(function (response) {
+            $("#restaurants").empty();
+            $("#streetview").empty();
             for (let i = 0; i < 2; i++) {
                 console.log(response.businesses[i])
                 // Creating and storing a div tag
